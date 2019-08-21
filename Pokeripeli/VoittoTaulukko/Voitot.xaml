@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="VoittoTaulukko.Voitot"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:properties="clr-namespace:VoittoTaulukko.Properties"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Height="Auto" Name="stackPanelNimet" Width="Auto">
+            <Label Content="{x:Static properties:Resources.labelViitoset}" Height="Auto" Name="labelViitoset" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="{x:Static properties:Resources.labelVarisuora}" Height="Auto" Name="labelVarisuora" FontSize="22" Foreground="White" Padding="0"  />
+            <Label Content="{x:Static properties:Resources.labelNeloset}" Height="Auto" Name="labelNeloset" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="{x:Static properties:Resources.labelTayskasi}" Height="Auto" Name="labelTayskasi" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="{x:Static properties:Resources.labelVari}" Height="Auto" Name="labelVari" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="{x:Static properties:Resources.labelSuora}" Height="Auto" Name="labelSuora" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="{x:Static properties:Resources.labelKolmoset}" Height="Auto" Name="labelKolmoset" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="{x:Static properties:Resources.labelKaksiparia}" Height="Auto" Name="labelKaksiparia" FontSize="22" Foreground="White" Padding="0" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Height="Auto" Name="stackPanelArvot" Width="Auto" Margin="20,0,0,0">
+            <Label Content="12.00" Height="Auto" Name="labelViitosetArvo" FontSize="22" Foreground="#FFE5E515" Padding="0" />
+            <Label Content="6.00" Height="Auto" Name="labelVarisuoraArvo" FontSize="22" Foreground="#FFE5E515" Padding="0" />
+            <Label Content="3.00" Height="Auto" Name="labelNelosetArvo" FontSize="22" Foreground="#FFE5E515" Padding="0" />
+            <Label Content="1.60" Height="Auto" Name="labelTayskasiArvo" FontSize="22" Foreground="#FFE5E515" Padding="0" />
+            <Label Content="0.80" Height="Auto" Name="labelVariArvo" FontSize="22" Foreground="#FFE5E515" Padding="0" />
+            <Label Content="0.60" Height="Auto" Name="labelSuoraArvo" FontSize="22" Foreground="#FFE5E515" Padding="0" />
+            <Label Content="0.40" Height="Auto" Name="labelKolmosetArvo" FontSize="22" Foreground="#FFE5E515" Padding="0" />
+            <Label Content="0.40" Height="Auto" Name="labelKaksipariaArvo" FontSize="22" Foreground="#FFE5E515" Padding="0" />
+        </StackPanel>
+        <StackPanel Grid.Column="2" Height="Auto" Name="stackPanelMerkki" Width="Auto" Margin="20,0,0,0">
+            <Label Content="€" Height="Auto" Name="labelMerkki1" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="€" Height="Auto" Name="labelMerkki2" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="€" Height="Auto" Name="labelMerkki3" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="€" Height="Auto" Name="labelMerkki4" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="€" Height="Auto" Name="labelMerkki5" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="€" Height="Auto" Name="labelMerkki6" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="€" Height="Auto" Name="labelMerkki7" FontSize="22" Foreground="White" Padding="0" />
+            <Label Content="€" Height="Auto" Name="labelMerkki8" FontSize="22" Foreground="White" Padding="0" />
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D4E7686F-FEDB-42FE-BB74-0615471E058D}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pelikortti</RootNamespace>
+    <AssemblyName>Pelikortti</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Kortti.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Kortti.xaml.cs">
+      <DependentUpon>Kortti.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\2C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\2H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\2S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\3C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\3H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\3S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\4C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\4D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\4H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\4S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\5C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\5D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\5H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\5S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\6C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\6D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\6H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\6S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\7C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\7D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\7H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\7S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\8C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\8D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\8H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\8S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\9C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\9D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\9H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\9S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\JC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\JD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\JH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\JS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\KC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\KD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\KH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\KS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\QC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\QD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\QH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\QS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Red_Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Blue_Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jokeri1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jokeri2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1S.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

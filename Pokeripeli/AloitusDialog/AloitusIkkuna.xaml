@@ -1,0 +1,23 @@
+﻿<Window x:Class="AloitusDialog.AloitusIkkuna"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:properties="clr-namespace:AloitusDialog.Properties"
+        Title="{x:Static properties:Resources.labelOtsikko}" Height="260" Width="370"
+        ResizeMode="CanResizeWithGrip"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Label Content="{x:Static properties:Resources.labelTeksti}" Height="28" HorizontalAlignment="Center" Margin="0" Name="labelOtsikko" VerticalAlignment="Top" FontSize="14" />
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <RadioButton Content="2 €" Height="Auto" Name="radioButton2" GroupName="RahaMaarat" Margin="0,0,0,5" IsChecked="True" TabIndex="0" Checked="radioButton2_Checked" FontSize="16" />
+            <RadioButton Content="5 €" Height="Auto" Name="radioButton5" GroupName="RahaMaarat" Margin="0,0,0,5" Checked="radioButton5_Checked" TabIndex="1" FontSize="16" />
+            <RadioButton Content="10 €" Height="Auto" Name="radioButton10" GroupName="RahaMaarat" Margin="0,0,0,5" Checked="radioButton10_Checked" TabIndex="2" FontSize="16" />
+            <RadioButton Content="15 €" Height="Auto" Name="radioButton15" GroupName="RahaMaarat" Margin="0,0,0,5" Checked="radioButton15_Checked" TabIndex="3" FontSize="16" />
+            <RadioButton Content="20 €" Height="Auto" Name="radioButton20" GroupName="RahaMaarat" Margin="0,0,0,5" Checked="radioButton20_Checked" TabIndex="4" FontSize="16" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5">
+        <Button Content="_OK" Height="23" HorizontalAlignment="Left" Margin="0,0,0,0" Name="buttonOk" VerticalAlignment="Top" Width="75" IsDefault="True" TabIndex="5" Click="buttonOk_Click" />
+        <Button Content="{x:Static properties:Resources.buttonPeruuta}" Height="23" HorizontalAlignment="Left" Margin="5,0,0,0" Name="buttonPeruuta" VerticalAlignment="Top" Width="75" IsCancel="True" TabIndex="6" Click="buttonPeruuta_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
