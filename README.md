@@ -1,3 +1,3 @@
 # WPF-pokeri
 
-![alt text](https://github.com/jiipk/projects/blob/master/images/pokeri.png)
+![alt text](https://github.com/jiipk/WPF-pokeri/blob/master/images/pokeri.png)
